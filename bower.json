@@ -1,0 +1,21 @@
+{
+  "name": "wp_dr-chatton_themplate",
+  "description": "WP theme for DR Chatton",
+  "main": "index.php",
+  "authors": [
+    "webmaster-fazio"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower_components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
