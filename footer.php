@@ -13,7 +13,11 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<div id="footerDivider" class="row">
+		
+	</div>
+
+	<footer id="colophon" class="site-footer container" role="contentinfo">
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'dr-chatton' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'dr-chatton' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
