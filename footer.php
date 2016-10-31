@@ -13,8 +13,8 @@
 
 	</div><!-- #content -->
 
-	<div id="footerDivider" class="row">
-		
+	<div id="footerDivider" class="container">
+
 	</div>
 
 	<footer id="colophon" class="site-footer container" role="contentinfo">

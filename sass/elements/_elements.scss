@@ -40,3 +40,40 @@ figure {
 }
 
 @import "tables";
+
+.site-branding{
+	// background: url('src/img/header.gif') $color__primary no-repeat center top;
+	background: $color__primary;
+	background-size: cover;
+	height: 140px;
+	color:#fff;
+	border: solid 3px #ab9f9f;
+	border-top: none;
+	border-radius: 0px 0px 5px 5px;
+	padding:0px !important;
+	overflow: hidden;
+
+	.site-title {
+		position:absolute;
+		left:-9999px;
+	}
+	img {
+		height: auto;
+    display: block;
+		margin: auto;
+	}
+
+	a, a:visited{
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.site-content {
+	border: solid 1px #C7DEFA;
+}
+
+#footerDivider {
+	background: $color__primary;
+	height: 30px;
+}

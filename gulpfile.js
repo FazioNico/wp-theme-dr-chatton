@@ -85,7 +85,12 @@ gulp.task('php', function () {
 
 // Task to copy img files in desDir
 gulp.task('img', function () {
-  return gulp.src(['./src/img/*.png', './src/img/*.jpg', './src/img/*.jpeg'])
+  return gulp.src([
+    './src/img/*.png',
+    './src/img/*.jpg',
+    './src/img/*.jpeg',
+    './src/img/*.gif'
+  ])
     .pipe(gulp.dest(path.desDir+'src/img/'))
     .pipe(reload({stream:true}));
 });

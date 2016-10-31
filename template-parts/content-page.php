@@ -11,7 +11,7 @@
 ?>
 
 <section id="post-<?php the_ID(); ?>"  <?php post_class('row'); ?>>
-	<div class="col col-sm-8 offset-2">
+	<div class="col col-sm-10 col-sm-offset-1">
 		<?php
 			the_content();
 		?>
