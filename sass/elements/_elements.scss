@@ -76,7 +76,31 @@ figure {
 	background: $color__primary;
 	height: 30px;
 }
+.cours-page{
+	.col.col-sm-3 {
+		padding:0px;
+		margin:0px;
+	}
+	.listeCours {
+		background: url('src/img/bglinkscours.gif') top right repeat-y;
+		padding-bottom:20px;
+		
+		.catTitle {
+			text-shadow: 0px 0px 1px #000,0px 0px 1px #000;
+			border-bottom: solid 1px #fff;
+		}
+		p {
+			line-height: 1.2rem;
+		}
+		.catTitle, p {
+			padding:0px 5px;
+			color:#fff;
+			margin:0px 0px 10px;
 
-.listeCours {
-	background: url('src/img/bglinkscours.gif') top right repeat-y;
+			a {
+				color:#333;
+				text-decoration: none;
+			}
+		}
+	}
 }

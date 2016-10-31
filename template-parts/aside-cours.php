@@ -23,7 +23,7 @@
       );
       if (get_posts($args)) :
   ?>
-      <h2><?php echo $tax->name; ?></h2>
+      <h2 class="catTitle"><?php echo $tax->name; ?></h2>
       <?php
         foreach(get_posts($args) as $p) :
         $customMetaPost = get_post_custom($p->ID);
