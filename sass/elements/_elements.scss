@@ -45,7 +45,6 @@ figure {
 	// background: url('src/img/header.gif') $color__primary no-repeat center top;
 	background: $color__primary;
 	background-size: cover;
-	height: 140px;
 	color:#fff;
 	border: solid 3px #ab9f9f;
 	border-top: none;
@@ -70,7 +69,7 @@ figure {
 }
 
 .site-content {
-	border: solid 1px #C7DEFA;
+	border: solid 1px $color__secondary;
 }
 
 #footerDivider {
