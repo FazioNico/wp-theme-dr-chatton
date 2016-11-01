@@ -1,19 +1,35 @@
 <?php
 
 function cours_module() {
+	$labels = array(
+		'name'                => _x( 'Cours', 'Cours', 'text_domain' ),
+		'singular_name'       => _x( 'Cours', '', 'text_domain' ),
+		//'menu_name'           => __( 'Products', 'text_domain' ),
+		//'parent_item_colon'   => __( 'Parent Item:', 'text_domain' ),
+		'all_items'           => __( 'Tous les cours', 'text_domain' ),
+		'view_item'           => __( 'Voir ce cours', 'text_domain' ),
+		'add_new_item'        => __( 'Ajouter un nouveau cours', 'text_domain' ),
+		'add_new'             => __( 'Ajouter', 'text_domain' ),
+		'edit_item'           => __( 'Modifier le cours', 'text_domain' ),
+		'update_item'         => __( 'Mettre à jour', 'text_domain' ),
+		'search_items'        => __( 'Rechercher un cours', 'text_domain' ),
+		//'not_found'           => __( 'Pas ', 'text_domain' ),
+		//'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
+	);
 	$args = array(
-		'label' => __('Cours'),
-		'singular_label' => __('Cour'),
-		'public' => true,
-		'show_ui' => true,
-		'_builtin' => false, // It's a custom post type, not built in
-		'_edit_link' => 'post.php?post=%d',
+		'labels' 					=> $labels,
+		'singular_label' 	=> __('Cour'),
+		'public' 					=> true,
+		'show_ui' 				=> true,
+		'_builtin' 				=> false, // It's a custom post type, not built in
+		'_edit_link' 			=> 'post.php?post=%d',
 		'capability_type' => 'post',
-		'hierarchical' => false,
-		'rewrite' => array("slug" => "cours"),
-		'query_var' => "cours", // This goes to the WP_Query schema
-		'supports' => array('title', 'editor'), //titre + zone de texte + champs personnalisés + miniature valeur possible : 'title','editor','author','thumbnail','excerpt'
-		'taxonomies' => array('category')
+		'menu_icon'       => 'dashicons-admin-page',
+		'hierarchical' 		=> false,
+		'rewrite' 				=> array("slug" => "cours"),
+		'query_var' 			=> "cours", // This goes to the WP_Query schema
+		'supports' 				=> array('title', 'editor'), //titre + zone de texte + champs personnalisés + miniature valeur possible : 'title','editor','author','thumbnail','excerpt'
+		'taxonomies' 			=> array('category')
 	);
 	register_post_type( 'cours' , $args ); // enregistrement de l'entité projet basé sur les arguments ci-dessus
 	register_taxonomy_for_object_type('post_tag', 'cours','show_tagcloud=1&hierarchical=false'); // ajout des mots clés pour notre custom post type
