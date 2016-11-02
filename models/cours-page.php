@@ -13,7 +13,7 @@ get_header();?>
   echo  '<div class="col col-sm-3 col-xs-12">';
   get_template_part( 'template-parts/aside', 'cours' );
   echo  '</div>';
-  echo  '<div class="col col-sm-9 col-xs-12">';
+  echo  '<div class="col col-sm-9 col-xs-12 page">';
   echo   '<img id="selectcours" src="'.get_template_directory_uri().'/src/img/selectcours.gif" title="Selectionnez un cours">';
   echo  '</div>';
   echo '</div>';

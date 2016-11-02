@@ -117,3 +117,22 @@ figure {
 		}
 	}
 }
+main .page, main .type-en {
+    padding: 30px 0px;
+}
+#primary {
+	img {
+		width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin: 50px auto;
+	}
+}
+.borded {
+	border: 1px dotted #C7DEFA;
+  display: block !important;
+  text-align: center !important;
+  max-width: 280px !important;
+  margin: auto !important;
+	padding:10px;
+}
