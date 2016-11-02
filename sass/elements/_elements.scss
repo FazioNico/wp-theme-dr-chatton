@@ -124,10 +124,16 @@ figure {
 	.entry-content {
 		background: url('src/img/bgsessions.gif') top left no-repeat;
 		margin: 1.5em auto 0;
-    max-width: 400px;
+    max-width: 550px;
     border: dotted 1px;
     border-color: #C7DEFA;
-    padding: 0px 25px;
+    padding: 20px 25px;
+
+		.cours-title{
+			font-size: 1rem;
+			margin: 0px!important;
+			font-weight: 400;
+		}
 	}
 	.listeCours p {
 	    padding: 8px 10px;
