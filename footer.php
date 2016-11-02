@@ -14,14 +14,14 @@
 	</div><!-- #content -->
 
 	<div id="footerDivider" class="container">
-
 	</div>
 
 	<footer id="colophon" class="site-footer container" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'dr-chatton' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'dr-chatton' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'dr-chatton' ), 'dr-chatton', '<a href="http://nicolasfazio.ch" rel="designer">Nicolas Fazio</a>' ); ?>
+			<p>
+				Propriété du Dr. Chatton © <br>
+				Tous droits réservés
+			</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
