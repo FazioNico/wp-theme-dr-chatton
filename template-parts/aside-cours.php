@@ -29,11 +29,11 @@
         $customMetaPost = get_post_custom($p->ID);
         $dates = $customMetaPost["dates"][0];
       ?>
-          <p>
-            <a href="<?php echo get_permalink($p); ?>">
+          <a href="<?php echo get_permalink($p); ?>">
+            <p>
               <?php echo $p->post_title; ?> (<?php echo $dates;?>)
-            </a>
-          </p>
+            </p>
+          </a>
       <?php
         endforeach;
       endif;

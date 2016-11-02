@@ -103,21 +103,27 @@ figure {
 			border-top: solid 1px #fff;
 			border-bottom: solid 1px #fff;
 			font-size:1.2rem;
-		}
-		p {
-			line-height: 1.2rem;
+			color:#fff;
 		}
 		.catTitle, p {
 			padding:0px 5px;
-			color:#fff;
 			margin:0px 0px 10px;
-
-			a {
-				color:#333;
-				text-decoration: none;
-			}
+		}
+		a {
+			color:#333;
+			text-decoration: none;
+		}
+		a:hover, a:hover p{
+			background: red;
+		}
+		p {
+			line-height: 1.2rem;
+			color:#333;
 		}
 	}
+}.listeCours p {
+    padding: 0 5px;
+    margin: 0 0 10px;
 }
 main .page, main .type-en {
     padding: 30px 0px;
