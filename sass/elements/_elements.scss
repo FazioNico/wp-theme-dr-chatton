@@ -70,6 +70,7 @@ figure {
 
 .site-content {
 	border: solid 1px $color__secondary;
+	background: url('src/img/bgbr.gif') bottom right no-repeat;
 }
 
 #footerDivider {
@@ -99,6 +100,7 @@ figure {
 
 		.catTitle {
 			text-shadow: 0px 0px 1px #000,0px 0px 1px #000;
+			border-top: solid 1px #fff;
 			border-bottom: solid 1px #fff;
 			font-size:1.2rem;
 		}
