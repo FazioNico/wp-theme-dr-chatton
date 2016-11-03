@@ -51,6 +51,7 @@ figure {
 	border-radius: 0px 0px 5px 5px;
 	padding:0px !important;
 	overflow: hidden;
+	position:relative;
 
 	.site-title {
 		position:absolute;
@@ -65,6 +66,16 @@ figure {
 	a, a:visited{
 		color: #fff;
 		text-decoration: none;
+	}
+	.lang {
+		position: absolute;
+		top:0;
+		right: 0;
+		padding: 5px;
+
+		img {
+			display: inline;
+		}
 	}
 }
 
