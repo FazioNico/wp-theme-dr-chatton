@@ -70,10 +70,17 @@
 				</p>
 				<?php
 					the_content();
+
+					if(!empty($file)){
+						?>
+						<p>
+							<a href="<?php echo wp_get_attachment_url($file);?>" target="_blank">
+								<img class="file-icon" src="<?php echo get_template_directory_uri(); ?>/src/img/iconpdf.gif" alt="" />Télécharger le fichier associé
+							</a>
+						</p>
+						<?php
+					}
 				?>
-				<p>
-					<a href="<?php echo wp_get_attachment_url($file);?>" target="_blank">Télécharger le fichier associé</a>
-				</p>
 			</div>
 		</div>
 
