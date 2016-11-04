@@ -10,7 +10,7 @@
   foreach (get_categories($cargs) as $tax) :
       // List posts by the terms for a custom taxonomy of any post type
       $args = array(
-          'post_type'         => 'cours',
+          'post_type'         => 'coursen',
           'post_status'       => 'publish',
           'posts_per_page'    => -1,
           'tax_query' => array(
@@ -21,6 +21,7 @@
               )
           )
       );
+      //print_r(get_posts($args));
       if (get_posts($args)) :
   ?>
       <h2 class="catTitle"><?php echo $tax->name; ?></h2>

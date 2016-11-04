@@ -143,6 +143,7 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load 'Cours' Custom Post Type.
  */
 require get_template_directory() . '/inc/custom-post-cours.php';
+require get_template_directory() . '/inc/custom-post-cours-en.php';
 
 
 /**
