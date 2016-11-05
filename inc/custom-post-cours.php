@@ -24,7 +24,7 @@ function cours_module() {
 		'_builtin' 				=> false, // It's a custom post type, not built in
 		'_edit_link' 			=> 'post.php?post=%d',
 		'capability_type' => 'post',
-		'menu_icon'       => 'dashicons-admin-page',
+		'menu_icon'       => 'dashicons-admin-post',
 		'hierarchical' 		=> false,
 		'rewrite' 				=> array("slug" => "cours"),
 		'query_var' 			=> "cours", // This goes to the WP_Query schema

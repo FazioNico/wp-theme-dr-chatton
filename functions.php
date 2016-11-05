@@ -153,6 +153,11 @@ require get_template_directory() . '/inc/custom-post-cours-en.php';
  */
 require get_template_directory() . '/inc/custom-page-en.php';
 
+/**
+ * Load 'Multilangue' Custom Option.
+ */
+require get_template_directory() . '/inc/custom-option-multilangue.php';
+
 
 
 /* display all post_type in $WP_Query */

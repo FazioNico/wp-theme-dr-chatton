@@ -35,18 +35,25 @@
 				<p class="site-description"><?php //echo $description; /* WPCS: xss ok. */ ?></p>
 			<?php
 			endif; ?> -->
-			<div class="lang">
-				<a href="<?php echo home_url();?>">
-					<span class="fr">
-						<img src="<?php echo get_template_directory_uri(); ?>/src/img/flag-fr.png" alt="langue fr" />
-					</span>
-				</a>
-				<a href="<?php echo home_url();?>/en/information">
-					<span class="en">
-						<img src="<?php echo get_template_directory_uri(); ?>/src/img/flag-en.png" alt="language en" />
-					</span>
-				</a>
-			</div>
+			<?php
+				if(get_option( 'translation' ) === '1'){
+			?>
+				<div class="lang">
+					<a href="<?php echo home_url();?>">
+						<span class="fr">
+							<img src="<?php echo get_template_directory_uri(); ?>/src/img/flag-fr.png" alt="langue fr" />
+						</span>
+					</a>
+					<a href="<?php echo home_url();?>/en/index">
+						<span class="en">
+							<img src="<?php echo get_template_directory_uri(); ?>/src/img/flag-en.png" alt="language en" />
+						</span>
+					</a>
+				</div>
+			<?php
+				}
+			?>
+
 		</div><!-- .site-branding -->
 
 		<div class="container">
