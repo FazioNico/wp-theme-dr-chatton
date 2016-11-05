@@ -28,7 +28,7 @@ function cours_module_en() {
 		'capability_type' => 'post',
 		'menu_icon'       => 'dashicons-admin-page',
 		'hierarchical' 		=> false,
-		'rewrite' 				=> array("slug" => "coursen"),
+		'rewrite' 				=> array("slug" => "en-cours",'with_front' => false,),
 		'query_var' 			=> "coursen", // This goes to the WP_Query schema
 		'supports' 				=> array('title', 'editor'), //titre + zone de texte + champs personnalisés + miniature valeur possible : 'title','editor','author','thumbnail','excerpt'
 		'taxonomies' 			=> array('category')
