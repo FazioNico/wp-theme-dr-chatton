@@ -59,7 +59,7 @@ gulp.task('css', function () {
   return gulp.src([path.tmpDir+'/*.css', path.dev+'/style.css'])
     .pipe(useref())
     .pipe(concatCss("style.css"))
-    .pipe(cssmin({keepSpecialComments : 0}))
+    .pipe(cssmin({keepSpecialComments : 1}))
     .pipe(gulp.dest(path.desDir))
     .pipe(reload({stream:true}));
 });
