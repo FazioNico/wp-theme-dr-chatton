@@ -9,10 +9,10 @@ $class = ' cours-page';
 
 	<div id="primary" class="content-area">
 
-		<main id="main" class="site-main <?php if (is_single('83') == 1){ echo ' cours-page';}?>" role="main">
+		<main id="main" class="site-main <?php if (is_single('cours') == 1){ echo ' cours-page';}?>" role="main">
 			<?php
 			while ( have_posts() ) : the_post();
-				if (is_single('83') == 1){
+				if (is_single('cours') == 1){
 					get_template_part( 'template-parts/page', 'cours-en' );
 				}
 				else{
@@ -25,5 +25,5 @@ $class = ' cours-page';
 	</div><!-- #primary -->
 <?php
 //get_sidebar();
-get_footer();
+get_footer('en');
 ?>

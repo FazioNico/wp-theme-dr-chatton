@@ -49,8 +49,8 @@
 
 		<div class="container">
 			<nav id="site-navigation" class="" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'dr-chatton' ); ?></button>
-				<?php wp_nav_menu( array( 'menu' => 5, 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'dr-chatton' ); ?></button> -->
+				<?php wp_nav_menu( array( 'menu' => 'Menu EN', 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
 		</div>
 
